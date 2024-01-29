@@ -1,0 +1,291 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0e1317;
+}
+
+/* Styling Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0e1317; /* Warna latar belakang navigasi */
+  padding: 30px 20px;
+  position: sticky;
+  margin: 10px 30px;
+}
+
+.gambar h1 {
+  color: #fff; /* Warna teks logo */
+  box-shadow: black;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+ul a {
+  text-decoration: none;
+  color: #fff; /* Warna teks menu */
+  margin-right: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+ul a:hover {
+  color: #ffcc00; /* Warna teks menu saat dihover */
+}
+
+.icon {
+  display: flex;
+}
+
+.icon i {
+  margin-left: 20px;
+  font-size: 20px;
+  margin-right: 30px;
+}
+
+.icon i:hover{
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/* .container-home {
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    grid-template-columns: auto;
+}
+.item{
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+.home-img{
+    background-color: #202220;
+    padding: 50px;
+} */
+
+.container-home {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dua kolom yang sama lebar */
+  gap: 20px; /* Jarak antara elemen-elemen */
+  justify-content: center;
+  align-items: center;
+  margin: 100px 70px;
+}
+
+.item {
+  padding: 20px;
+}
+
+.home-text h1 {
+  color: white;
+  font-size: 3rem;
+}
+.home-text p {
+  color: white;
+  font-size: 12pt;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.tombol-home {
+  margin-top: 30px;
+}
+.tombol-home button {
+  padding: 15px 40px;
+  margin-right: 40px;
+  font-size: 14pt;
+  cursor: pointer;
+}
+
+#shop {
+  background-color: #ffcc00;
+  color: #0e1317;
+}
+
+#read {
+  background-color: #202220;
+  border: 1px solid #ffcc00;
+  color: #ffcc00;
+}
+.home-img {
+  margin-left: 150px;
+  padding: 50px 0px;
+}
+
+/* Media query untuk responsif */
+@media (max-width: 768px) {
+  .container-home {
+    grid-template-columns: 1fr; /* Satu kolom pada layar yang lebih kecil */
+  }
+}
+
+.container-populer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Dua kolom yang sama lebar */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 70px;
+  background-color: #202220;
+  backdrop-filter: blur(30px);
+  padding-top: 100px;
+}
+
+.populer {
+  padding: 10px;
+  margin: 20px 30px;
+}
+
+.menu1 {
+  color: #fff;
+}
+.menu1 img {
+  float: left;
+  margin-right: 20px;
+}
+.menu2 {
+  color: #fff;
+}
+.menu2 img {
+  float: left;
+  margin-right: 20px;
+}
+.menu3 {
+  color: #fff;
+}
+.menu3 img {
+  float: left;
+  margin-right: 20px;
+}
+
+.container-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dua kolom yang sama lebar */
+  gap: 200px; /* Jarak antara elemen-elemen */
+  justify-content: center;
+  align-items: center;
+  margin: 100px 100px;
+}
+
+.about-text h1 {
+  color: #fff;
+  font-size: 32pt;
+}
+.about-text p {
+  color: #fff;
+  font-size: 12pt;
+  text-align: justify;
+}
+
+.profile-button {
+  margin-top: 20px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  padding: 30px 0px;
+}
+.profile-button button {
+  padding: 15px 40px;
+  margin-right: 40px;
+  font-size: 14pt;
+  cursor: pointer;
+  background-color: #ffcc00;
+  color: #0e1317;
+}
+
+.profile-button img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+#kiri {
+  margin-right: -10px;
+}
+
+.container-menu {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 100px;
+  padding: 10px;
+}
+
+.menu {
+  padding: 20px;
+}
+
+.text {
+  color: #fff;
+  text-align: justify;
+  margin-right: 5rem;
+}
+
+.testi-text {
+  color: #fff;
+  text-align: justify;
+  margin-left: 5rem;
+  grid-column: 2 / 5;
+}
+
+.container-artikel {
+  display: grid;
+  grid-template-columns: auto auto auto auto; 
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  padding: 10px;
+}
+
+.artikel {
+  padding: 20px;
+
+}
+
+
+button {
+  background-color: #202220;
+  border: 1px solid #ffcc00;
+  color: #ffcc00;
+  padding: 20px 40px;
+  font-size: 14pt;
+}
+
+
+.container-footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 100px;
+    
+}
+
+.info5 {
+    
+}
+
+.info6 i {
+    margin-bottom: 20px;
+    
+}
+
+.info8 i {
+    margin-right: 20px;
+}
+
